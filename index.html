@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="stars">
+        <div class="twinkling">
+            <div class="clouds">
+                <h1>Track the Closest Asteroid</h1>
+                <div class="data-holder">
+                    <form action="">
+                        <input title="min" type="date" value="2000-01-01" name="date-min" id="date-min"></input>
+                        <input title="max" type="date" value="2000-01-31" name="date-max" id="date-max"></input>
+                        <input type="submit" value="submit"></input>
+                    </form>
+                </div>
+                <div class="display-data">
+                    <h2>Asteroid</h2>
+                </div>
+                <img src="revolution.gif" id="rev" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/asteroids-api.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
